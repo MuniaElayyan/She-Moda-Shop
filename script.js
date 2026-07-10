@@ -17,3 +17,34 @@ document.querySelectorAll("#menu a").forEach(link => {
         menu.classList.remove("active");
     });
 });
+
+function showCategory(category){
+
+    document.querySelector(".category-grid").style.display="none";
+
+
+    document.querySelectorAll(".products-section").forEach(section=>{
+
+        section.style.display="none";
+
+    });
+
+
+    document.getElementById(category).style.display="block";
+
+}
+
+
+
+function backToCategories(){
+
+    document.querySelector(".category-grid").style.display="flex";
+
+
+    document.querySelectorAll(".products-section").forEach(section=>{
+
+        section.style.display="none";
+
+    });
+
+}
