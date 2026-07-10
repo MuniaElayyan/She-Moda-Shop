@@ -1,9 +1,9 @@
-const menuBtn=document.querySelector(".menu-btn");
+const menuBtn = document.getElementById("menu-btn");
 
-const menu=document.querySelector("nav ul");
+const menu = document.getElementById("menu");
 
-menuBtn.onclick=function(){
+menuBtn.addEventListener("click", function(){
 
     menu.classList.toggle("active");
 
-}
+});
