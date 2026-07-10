@@ -125,19 +125,6 @@ nav ul li a:hover{
 
 @media(max-width:900px){
 
-    nav{
-        flex-direction:column;
-        height:auto;
-        padding:20px 0;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:15px;
-        margin-top:15px;
-    }
-
     #Home{
         flex-direction:column-reverse;
         text-align:center;
@@ -643,6 +630,9 @@ footer{
     nav{
 
         height:80px;
+        display:flex;
+    justify-content:space-between;
+    align-items:center;
 
     }
 
@@ -654,8 +644,7 @@ footer{
 
     nav ul{
 
-        position:absolute;
-
+position:fixed;
         top:80px;
 
         right:0;
@@ -688,4 +677,16 @@ footer{
 
     }
 
+    @media(max-width:768px){
+
+.logo img{
+
+    width:55px;
+    height:55px;
+
+}
+
+}
+
+}
 }
