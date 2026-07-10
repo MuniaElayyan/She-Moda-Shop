@@ -618,75 +618,51 @@ footer{
 }
 
 
-
 @media (max-width:768px){
 
     header{
-
         height:80px;
-
     }
 
     nav{
-
         height:80px;
         display:flex;
-    justify-content:space-between;
-    align-items:center;
-
+        justify-content:space-between;
+        align-items:center;
     }
 
     .menu-btn{
-
         display:block;
+        position:relative;
+        z-index:2001;
+    }
 
+    .logo img{
+        width:55px;
+        height:55px;
     }
 
     nav ul{
-
-position:fixed;
+        position:fixed;
         top:80px;
-
+        left:0;
         right:0;
-
         width:100%;
-
         background:#fff1f5;
-
         display:none;
-
         flex-direction:column;
-
         text-align:center;
-
         padding:20px 0;
-
         box-shadow:0 10px 20px rgba(0,0,0,.1);
-
+        z-index:2000;
     }
 
     nav ul.active{
-
         display:flex;
-
     }
 
     nav ul li{
-
         margin:15px 0;
-
     }
 
-    @media(max-width:768px){
-
-.logo img{
-
-    width:55px;
-    height:55px;
-
-}
-
-}
-
-}
 }
